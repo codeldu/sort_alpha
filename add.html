@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .err{
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        Name: 
+        <p id="nameErr" class="err" >*Ad tam olaraq doldurulmalidir</p>   
+    <input type="text" id="name" required>
+    </label>
+    <label>
+        Surname: 
+        <p id="surnameErr" class="err" >*Soyad tam olaraq doldurulmalidir</p>
+    <input type="text" id="surname" required>
+    </label>
+    <button type="submit" id="sub">Send</button>
+    <script src="./add.js"></script>
+</body>
+</html>
